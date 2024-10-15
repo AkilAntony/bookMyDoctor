@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       colors:{
-        "success":'#00bf63'
+        "success":'#00bf63',
+        'cardBackground':'rgba(201, 216, 255, 1)'
       }
     },
   },

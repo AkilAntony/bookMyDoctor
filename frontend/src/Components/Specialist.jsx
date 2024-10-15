@@ -6,7 +6,7 @@ import Neurologist from '../assets/Neurologist.svg'
 import GeneralPhysician from '../assets/General_physician.svg'
 import Gastroenterologist from '../assets/Gastroenterologist.svg'
 import { Link } from 'react-router-dom'
-
+import specialistData from '../assets/assets'
 
 function Specialist() {
     const specialist = [{name:'General physician',image:GeneralPhysician},

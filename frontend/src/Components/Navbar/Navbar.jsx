@@ -22,14 +22,14 @@ function Navbar() {
         <img src={logo} className=' object-contain h-[86px] '  />
         <ul className='md:flex gap-5 hidden font-medium items-center justify-center'>
            {navLinks.map((link)=>(
-            <NavLink to ={link.route} exact activeClassName="active-link">
+            <NavLink to ={link.route}  className="active-link" key={link.name}>
                 <li className='py-1'>{link.name}</li>
                 <hr className='h-0.5 border-none outline-none bg-success w-3/4 m-auto hidden'/>
             </NavLink>
             ))
             }
         </ul>
-        <div className='  rounded-full  flex items-center gap-4'>
+        <div className='rounded-full  flex items-center gap-4'>
             {
                 token ?
                     <div className='flex gap-2 items-center cursor-pointer group relative'>
